@@ -1,0 +1,122 @@
+@import url("reset.css");
+
+html{
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+main {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+a,img {
+  transition: all 0.4s ease;
+}
+
+.sourse {
+  position: fixed;
+  width: 200px;
+  height: 100vh;
+  left: 0;
+  text-align: center;
+}
+
+
+  .source-article li ,.source-video li {
+    padding-top: 10px;
+    transition: all ease 0.4s;
+  }
+
+  .source-article li {
+    color: red;
+  }
+
+  .source-article li a:hover,.source-video li a:hover{
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .source-article + ul {
+  color: gray;
+  }
+  .source-video {
+    margin-top: 30px;
+  }
+
+.information {
+  grid-column: 2;
+}
+
+.information nav {
+  background-color: grey;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.information nav a {
+  margin-inline: 50px;
+  
+}
+
+
+
+.information nav a:hover {
+  color: blue;
+}
+
+.article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.first-article img {
+  margin-block: 30px;
+}
+
+.article h1,.article h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.article p {
+  font-size: 18px;
+  color:cornflowerblue;
+  width: 700px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.article h2 ~ p {
+  color: gold;
+}
+
+.people-of-ukraine li a {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+
+a img:hover {
+  filter: brightness(0.7);
+}
+
+.go_back {
+  display: block;
+  margin-top: 40px;
+  background-color: gray;
+  border-radius: 4px;
+  width: 70px;
+  margin-inline:auto;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
