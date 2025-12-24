@@ -1,0 +1,248 @@
+@import url(reset.css);
+
+.text {
+  padding: 20px;
+  background-color: green; 
+  margin-bottom: 50px;
+}
+
+/* .blue {
+  color: blue;
+}
+
+.text p:not(.blue) {
+  color: gold;
+} */
+
+.text p:nth-child(3n) {
+  color:yellow;
+}
+
+.wrapper {
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.game {
+  position: relative;
+  margin: 0 auto;
+  width: 50%;
+  background: url('../img/spanch-bob-fon-1.webp') center/cover no-repeat;
+  height: 50vh;
+}
+
+
+
+.start {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.line {
+  background-color: blue;
+}
+
+.first-line {
+  width: 70px;
+  height: 5px;
+}
+
+
+.second-line {
+  margin-left: auto;
+  height: 100px;
+  width: 10px;
+}
+
+
+.third-line {
+  padding-top: 90px;
+}
+.third-line__item {
+  width: 30px;
+  height: 10px;
+}
+
+.four-line__item {
+  width: 20px;
+  height: 20px;
+  margin-left: 27px;
+}
+
+.line-five {
+  padding-top: 20px;
+}
+
+.line-five__item {
+  width: 100px;
+  height: 20px;
+}
+
+.line-six {
+  padding-top: 10px;
+  padding-left: 100px;
+}
+
+.line-six__item {
+  width: 400px;
+  height: 7px;
+}
+
+.the-restaurant {
+  margin-left: 100%;
+}
+
+.second-line, .third-line__item, .four-line__item,.line-five__item,.line-six__item,.line-seven__item{
+  display: none;
+} 
+
+.first-line:hover .second-line, 
+.second-line:hover .third-line__item,
+.third-line__item:hover .four-line__item,
+.four-line__item:hover .line-five__item,
+.line-five__item:hover .line-six__item{
+  display: block;
+}
+
+.img-of__bob {
+  position: relative;
+}
+
+.img-of__bob::before {
+  content:'Help me to get the restaurant!';
+  vertical-align: bottom;
+  position: absolute;
+  top: 80px;
+  right: 140px;
+  padding-top: 70px;
+  text-align: center;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background-color: grey;
+  border: 1px solid grey;
+  border-radius: 100% 0% 44% 56% / 42% 63% 37% 58%;
+  color: #fff;
+}
+
+.second-exercise {
+  margin: 0  auto;
+  width: 300px;
+}
+
+.exercise-item {
+  font-family: 'Montserrat',sans-serif;
+  position: relative;
+  line-height: 24px;
+  color: #252b42;
+  margin-bottom: 19px;
+  margin-bottom: 50px;
+}
+
+.exercise-item::before {
+  content:'';
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background: url('../img/icons/green-arrow.png') no-repeat;
+  position: absolute;
+  top: -5px;
+  left: -42px;
+}
+
+.block {
+  width: 400px;
+  background-color: grey;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.link-block {
+  width: max-content;
+  margin: 0 auto;
+}
+
+.link-item{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  transition: font-size 0.4s;
+}
+
+.link-item:hover {
+  font-size: 30px;
+}
+
+.link:visited {
+  color: blue;
+  display: inline-block;
+}
+
+.block :first-child{
+  margin-bottom: 30px;
+}
+
+.block >*:not(:last-child):not(:first-child) {
+  margin-bottom: 20px;
+}
+
+.link-block:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+
+
+.block :last-child{
+  padding-bottom: 20px;
+}
+
+.block-text {
+  text-transform: capitalize;
+}
+
+.block-title {
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: center;
+  font-size: 32px;
+}
+
+.block-items {
+  width: 300px;
+  margin: 0 auto;
+  background-color: bisque;
+  text-align: center;
+}
+
+.block-items h2:last-of-type {
+  padding-bottom: 32px;
+  color: red;
+}
+
+.second-title {
+  font-size: 32px;
+
+}
+
+.block-items p:first-of-type {
+  color: blue;
+}
+
+.block-items p:last-of-type {
+  color: red;
+}
+
+.second-link:hover {
+  color: red;
+
+}
+
+.second-link:focus {
+  color:yellow;
+} 
+
+.second-link:focus-visible {
+  outline: dashed 5px red;
+  outline-offset: 20px;
+}
+
