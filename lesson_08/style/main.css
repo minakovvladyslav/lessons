@@ -1,0 +1,99 @@
+@import url(reset.css);
+
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.first-block {
+  margin-bottom: 700px;
+}
+
+.flower-wrapper__right {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  vertical-align: middle;
+  z-index: -100;
+}
+
+
+
+.flower-wrapper__left {
+  position: absolute;
+  left: 0;
+  top: 200px;
+  vertical-align: middle;
+  z-index: -100;
+}
+
+.text {
+  display: inline-block;
+}
+
+.first-part {
+  vertical-align: middle;
+  margin-bottom: 30px;
+}
+
+.second-part{
+  margin-left: 40%;
+  margin-bottom: 70px;
+}
+
+.third-part {
+  /* вибачаюсь за вікористання flex-зробленно для заощадження міста */
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 70px;
+}
+
+.footer-block {
+  background-color: grey;
+  padding: 50px;
+}
+
+svg{
+  transition: all 0.4s;
+}
+
+svg:hover{
+  fill:white;
+  stroke: white;
+}
+
+.title-question {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.questions-items {
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.questions-option {
+  margin-bottom: 20px;
+  background-color: #000;
+  display: inline-block;
+  color: #fff;
+} 
+
+.question-option__item {
+  padding: 20px;
+}
+
+.questions-option:hover {
+  text-decoration: underline;
+}
+
+#true_one:target, #true_two:target {
+  background-color: green;
+}
+
+#false_one:target, #false_two:target, #false-three:target,#false-four:target{
+  background-color: red;
+}
