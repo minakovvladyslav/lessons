@@ -79,7 +79,7 @@ a:hover::after {
 
 .header__input {
   padding: 10px 27px 10px;
-  background: url('/img/icons/search.svg') 3px 10px no-repeat;
+  background: url('../img/icons/search.svg') 3px 10px no-repeat;
   border-bottom: 1px #D4D4D4 solid;
 }
 
@@ -233,6 +233,7 @@ a:hover::after {
   bottom:0;
   right: 0;
 }
+
 
 
 
