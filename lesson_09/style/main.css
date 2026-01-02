@@ -58,12 +58,12 @@ a:hover::after {
 
 .header__item-extra--cart{
   padding-left: 20px;
-  background: url('/img/icons/cart-icon.svg') no-repeat;
+  background: url('../img/icons/cart-icon.svg') no-repeat;
   margin-left: 30px;
 }
 
 .header__item-extra--love {
-  background: url('/img/icons/love-icon.svg') no-repeat;
+  background: url('../img/icons/love-icon.svg') no-repeat;
   padding-left: 20px;
 }
 
@@ -233,6 +233,7 @@ a:hover::after {
   bottom:0;
   right: 0;
 }
+
 
 
 
