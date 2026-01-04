@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair%20Display:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/main.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+  <header class="header">
+    <div class="header__container">
+      <img class="header__logo" src="./img/main-logo.avif" alt="logo">
+      <div class="header__search">
+        <input class="search__item" type="text" placeholder="Search Something">
+      </div>
+      <nav class="nav">
+        <ul class="nav__block">
+          <li class="nav__item"><a class="nav__link" href="#">HOME</a></li>
+          <li class="nav__item shop"><span class="shop__item">SHOP</span>
+                                      <svg class="arrow" width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292787 0.305288C0.480314 0.117817 0.734622 0.0125018 0.999786 0.0125018C1.26495 0.0125018 1.51926 0.117817 1.70679 0.305288L4.99979 3.59829L8.29279 0.305288C8.38503 0.209778 8.49538 0.133596 8.61738 0.0811869C8.73939 0.0287779 8.87061 0.00119157 9.00339 3.77571e-05C9.13616 -0.00111606 9.26784 0.0241854 9.39074 0.0744663C9.51364 0.124747 9.62529 0.199 9.71918 0.292893C9.81307 0.386786 9.88733 0.498438 9.93761 0.621334C9.98789 0.744231 10.0132 0.87591 10.012 1.00869C10.0109 1.14147 9.9833 1.27269 9.93089 1.39469C9.87848 1.5167 9.8023 1.62704 9.70679 1.71929L5.70679 5.71929C5.51926 5.90676 5.26495 6.01207 4.99979 6.01207C4.73462 6.01207 4.48031 5.90676 4.29279 5.71929L0.292787 1.71929C0.105316 1.53176 0 1.27745 0 1.01229C0 0.747124 0.105316 0.492816 0.292787 0.305288Z" fill="black"/>
+                                      </svg>
+                                      <ul class="submenu">
+                                        <li class="submebu__item"><a href="#" class="submenu__link">Chairs</a></li>
+                                        <li class="submebu__item"><a href="#" class="submenu__link">Tabels</a></li>
+                                        <li class="submebu__item"><a href="#" class="submenu__link">Decors</a></li>
+                                        <li class="submebu__item"><a href="#" class="submenu__link">Season</a></li>
+                                      </ul>
+                                    </li>
+          <li class="nav__item"><a class="nav__link" href="#">BLOG</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">ABOUT US</a></li>
+        </ul>
+      </nav>
+      <div class="header__extra">
+        <a href="#" class="extra__item extra__item--love">Love</a>
+        <a href="#" class="extra__item extra__item--cart">Cart</a>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="gallery">
+      <div class="gallery__container">
+        <h1 class="gallery__title">Face </h1>
+        <div class="gallery__block">
+          <img class="gallery__photo" srcset="./img/first-photo-2x.jpg 2x, ./img/first-photo-3x.jpg 3x" src="./img/first-photo.jpg" alt="Cleansers">
+          <a class="gallery__link" href="#">More</a>
+          <span class="gallery__text">Cleansers</span>
+        </div>  
+        <div class="gallery__block">
+          <img class="gallery__photo" srcset="./img/second-photo-2x.jpg 2x, ./img/second-photo-3x.jpg 3x" src="./img/second-photo.jpg" alt="Eye Patches">
+          <a class="gallery__link" href="#">More</a>
+          <span class="gallery__text">Eye Patches</span>
+        </div>
+        <div class="gallery__block">
+          <img class="gallery__photo" srcset="./img/third-photo-2x.jpg 2x, ./img/third-photo-3x.jpg 3x" src="./img/third-photo.jpg" alt="Мasks">
+          <a class="gallery__link" href="#">More</a>
+          <span class="gallery__text">Мasks</span>
+        </div>
+        <div class="gallery__form">
+          <button class="gallery__button" type="button">More</button>
+        </div>
+      </div>
+    </section>
+    <div class="benefits">
+      <div class="benefits__container">
+        <div class="benefits__block">
+          <ul class="benefits__list">
+            <li class="benefits__item benefits__item--green-arrow">Unlimited product updates</li>
+            <li class="benefits__item benefits__item--green-arrow">Unlimited product </li>
+            <li class="benefits__item benefits__item--green-arrow">Unlimited product </li>
+            <li class="benefits__item benefits__item--grey-arrow">1GB  Cloud storage</li>
+            <li class="benefits__item benefits__item--grey-arrow">Email and community support</li>  
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="support">
+      <div class="support__block">
+        <a class="support__link" href="tel:+380950073138">
+          <svg class="support__item" width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="support__text">Need help?</span>
+        </a>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+  </div>
+</body>
+</html>
