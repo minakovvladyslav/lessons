@@ -214,7 +214,7 @@
   left: 4px;
 }
 
-.helicopter__left-foot {
+.helicopter__foot-left {
   height: 70px;
   width: 10px;
   position: absolute;
@@ -304,4 +304,5 @@
 
 .vehicle__body:hover .helicopter__main-blade {
   transform: rotateY(360deg);
+
 }
