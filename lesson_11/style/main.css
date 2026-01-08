@@ -1,0 +1,307 @@
+@import url('./reset.css');
+
+.transformation__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.transformation__block {
+  background-color: grey;
+  margin: 0 auto 50px;
+}
+
+.transformation__block, .transformation__item {
+  height: 300px;
+  aspect-ratio: 1;
+}
+
+.transformation__item {
+  background-color: #393030;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.transformation__text{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.transformation__item--scale:hover {
+  scale: 0.5;
+}
+
+.transformation__item--translate:hover {
+  translate: -20% 20%;
+}
+
+.transformation__item--skew:hover {
+  transform: skew( -40deg, 15deg);
+}
+
+.transformation__item--origin:hover {
+  transform-origin: bottom right;
+  transform: skew( -30deg, 10deg);
+}
+
+.transformation__card {
+  position: relative;
+  width: max-content;
+  margin: 0 auto 70px;
+  perspective: 200px;
+}
+
+.card__back {
+  position: absolute;
+  transform: rotateX(0deg);
+  transition: all 0.3s ease;
+}
+
+.card__face {
+  transform: rotateX(-180deg);
+  transition: all 0.3s ease;
+  backface-visibility: hidden;
+}
+
+.transformation__card:hover .card__back {
+  transform: rotateX(180deg);
+}
+
+.transformation__card:hover .card__face {
+  transform: rotateX(0deg);
+} 
+
+.transformation__block--3d {
+  perspective: 400px;
+}
+
+.transformation__item--3d {
+  transition: all 0.4s ease;
+}
+
+.transformation__item--3d:hover {
+  transform: rotate3d(1,2,1,46deg);
+}
+
+.logo {
+  width: max-content;
+  margin: 0 auto 400px;
+}
+
+.logo__block {
+  position: relative;
+  left: -45px;
+}
+
+.logo__leaves {
+  height: 45px;
+  aspect-ratio: 1;
+  border: 1px solid grey;
+  border-radius: 30% 70% 42% 58% / 13% 90% 10% 87% ;
+}
+
+.logo__leaves--second, .logo__leaves--third, .logo__leaves--first {
+  position: absolute;
+  left:0;
+  top:0;
+  transition: all 0.4s ease;
+}
+
+.logo:hover .logo__leaves--second {
+  top: -3px;
+  left: 25px;
+  transform: rotateZ(40deg);
+}
+
+.logo:hover .logo__leaves--third {
+  left: 45px;
+  transform: rotateZ(90deg);
+}
+
+.logo__title {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  font-style: italic;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  color: green;
+  white-space: nowrap;
+}
+
+.logo:hover .logo__title {
+  opacity: 1;
+  visibility: visible;
+}
+
+.vehicle__body {
+  position: relative;
+  border-radius: 24% 76% 70% 30% / 25% 99% 1% 75% ;
+  background-color: blue;
+  height: 200px;
+  aspect-ratio: 1;
+  left:300px;
+}
+
+.helicopter__window {
+  position: absolute;
+  border-radius:29% 71% 100% 0% / 0% 100% 0% 100%;
+  background-color: cyan; 
+  height: 100px;
+  aspect-ratio: 1;
+  opacity: 0.7;
+  z-index: 2;
+  top: 20%;
+  left: 47%;
+}
+
+.helicopter__tail {
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  background-color: blue;
+  left:-90%;
+  top: 50%;  
+  z-index: -2;
+  border-radius: 7px;
+}
+
+.helicopter__tool {
+  position: absolute;
+  height: 20px;
+  aspect-ratio: 1;
+  background-color: black;
+  border-radius: 50%;
+  left:-91%;
+  top: 50%;
+  transform: rotateZ(180deg);
+  transition: all ease-out 1s;
+}
+
+.vehicle__body:hover .helicopter__tool{
+  transform: rotateZ(-360deg);
+}
+
+.helicopter__blade-one, .helicopter__blade-two, .helicopter__blade-three {
+  position: absolute;
+  height: 70px;
+  width: 10px;
+  background-color: red;
+  border-radius: 100% 0% 100% 0% / 100% 0% 100% 0% ;
+}
+
+.helicopter__blade-one {
+  top: 10px;
+}
+
+.helicopter__blade-two {
+  transform: rotateZ(-110deg);
+  transform-origin: top;
+  top: 12px;
+}
+
+.helicopter__blade-three {
+  transform: rotateZ(110deg);
+  transform-origin: top;
+  top: 7px;
+  left: 4px;
+}
+
+.helicopter__left-foot {
+  height: 70px;
+  width: 10px;
+  position: absolute;
+  background-color: black;
+  top: 90%;
+  left: 30%;
+  transform: rotateZ(20deg);
+  z-index: -3;
+}
+
+.helicopter__foot-right {
+  height: 70px;
+  width: 10px;
+  position: absolute;
+  background-color: black;
+  top: 90%;
+  left: 90%;
+  transform: rotateZ(-20deg);
+  z-index: -3;
+}
+
+.helicopter__main-foot {
+  position: absolute;
+  width: 90%;
+  height: 10px;
+  background-color: black;
+  top: 120%;
+  left:20%;
+}
+
+.helicopter__main-foot::before {
+  content: '';
+  background-color: black;
+  height: 10px;
+  width: 15px;
+  transform: rotateZ(20deg);
+  position: absolute;
+  left: -13px;
+  top: -2px;
+}
+
+.helicopter__main-foot::after {
+  content: '';
+  background-color: black;
+  height: 10px;
+  width: 15px;
+  transform: rotateZ(-20deg);
+  position: absolute;
+  right: -12px;
+  top: -2px;
+}
+
+.helicopter__roof-detail {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  z-index: 2;
+  top: -15px;
+  left: 20%;
+}
+
+.helicopter__roof-circle {
+  position: absolute;
+  border-radius: 50%;
+  height: 15px;
+  width: 20px;
+  background-color: yellow;
+  top: -36px;
+  left: 19%;
+}
+
+.helicopter__wrapper {
+  perspective:300px;
+  transform-style: preserve-3d;
+}
+
+.helicopter__main-blade {
+  position: absolute;
+  width: 200%; 
+  height: 10px;
+  background-color: red;
+  left: -65%;
+  top: -25px;
+  transition: 1s ease-out all;
+}
+
+.vehicle__body:hover .helicopter__main-blade {
+  transform: rotateY(360deg);
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/main.css">
+  <title>Lesson11</title>
+</head>
+<body>
+  <div class="wrpapper">
+    <header></header>
+    <main>
+      <section class="transformation">
+        <h1 class="transformation__title">Види трансформацій</h1>
+        <div class="transformation__block">
+          <div class="transformation__item transformation__item--scale ">
+            <span class="transformation__text">scale: 0.5;</span>
+          </div>
+        </div>
+        <div class="transformation__block">
+          <div class="transformation__item transformation__item--translate">
+            <span class="transformation__text">translate: -20% 20%;</span>
+          </div>
+        </div>
+        <div class="transformation__block">
+          <div class="transformation__item transformation__item--skew">
+            <span class="transformation__text">transform: skew( -40deg, 15deg);</span>
+          </div>
+        </div>
+        <div class="transformation__block">
+          <div class="transformation__item transformation__item--origin">
+            <span class="transformation__text">transform-origin: bottom right;<br>transform: skew( -30deg, 10deg);</span>
+          </div>
+        </div>
+        <div class="card transformation__card ">
+          <div class="card__back">
+            <picture>
+              <source srcset="./img/back-cart.avif" type="image/avif">
+              <img src="./img/back-cart.png" height="300" width="300" alt="card">
+            </picture>
+          </div>
+          <div class="card__face">
+            <picture>
+              <source srcset="./img/face-cart.avif" type="image/avif"> 
+              <img src="./img/face-cart.png" height="300" width="300" alt="card">
+            </picture>
+          </div>
+        </div>
+        <div class="transformation__block transformation__block--3d">
+          <div class="transformation__item transformation__item--3d">
+            <span class="transformation__text">3d-animation</span>
+          </div>
+        </div>
+      </section>
+      <div class="logo">
+        <div class="logo__block">
+          <div class="logo__leaves logo__leaves--first"></div>
+          <div class="logo__leaves logo__leaves--second"></div>
+          <div class="logo__leaves logo__leaves--third"></div>
+          <span class="logo__title">Green life</span>
+        </div>
+      </div>
+      <div class="vehicle">
+        <div class="helicopter vehicle__body">
+          <div class="helicopter__window"></div>
+          <div class="helicopter__tail"></div>
+          <div class="helicopter__tool">
+            <div class="helicopter__blade-one"></div>
+            <div class="helicopter__blade-two"></div>
+            <div class="helicopter__blade-three"></div>
+          </div>  
+          <div class="helicopter__feet">
+            <div class="helicopter__foot-left"></div>
+            <div class="helicopter__foot-right"></div>
+            <div class="helicopter__main-foot"></div>
+          </div>
+          <div class="helicopter__roof-detail"></div>
+          <div class="helicopter__roof-circle"></div>
+          <div class="helicopter__wrapper">
+            <div class="helicopter__main-blade"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </div> 
+</body>
+</html>
