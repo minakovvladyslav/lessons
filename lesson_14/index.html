@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/main.css">
+  <title>Lesson15</title>
+</head>
+<body>
+  <div class="wrpapper">
+    <header></header>
+    <main>
+      <div class="first-block">
+        <div class="first-block__container">
+          <form method="post" class="first-block__first-form block-first" action="#">
+            <label class="block-first__title" for="first"> Ваш мобільний</label>
+            <input name="form[]" class="block-first__input" id="first" type="number" required placeholder="+380123456789">
+            <label class="block-first__title" for="second">Ваш пароль</label>
+            <input class="block-first__input" id="second" name="form[]" type="password" required placeholder="qweokn34_kr" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            <button class="block-first__button" type="submit">Відправити</button>
+          </form>
+          <form class="first-block__second-form block-second" action="#">
+            <label class="block-second__label">
+              <input class="block-second__box" value="yes" name="form[]" type="checkbox">
+              <span class="block-second__text">Даю зшоду на отримання СПАМу</span>
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="third-block">
+        <div class="third-block__container">
+          <h2 class="third-block__title">Choise the country:</h2>
+          <form action="#" class="third-block__form">
+            <label class="third-block__label"> 
+              <input class="third-block__input-ukraine" value="matherland" id="third-first" type="radio" name="form[country]">
+              <span class="third-block__text">Ukraine</span>
+            </label>
+            <label class="third-block__label">
+              <input class="third-block__input-usa" id="third-second"  type="radio" name="form[country]">
+              <span class="third-block__text">USA</span>
+            </label>
+            <label class="third-block__label">
+                <input class="third-block__input-germany" id="third-third" type="radio" name="form[country]">
+                <span class="third-block__text">Germany</span>
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="block-four">
+        <div class="block-four__container four">
+          <h2 class="four__title">Where do you live?</h2>
+          <form action="#" class="four__form">
+            <label class="four__label">
+              <input type="radio" name="home" class="four__input">
+              <span class="four__span">City</span>
+            </label>
+            <label class="four__label">
+              <input type="radio" name="home" class="four__input">
+              <span class="four__span">small town</span>
+            </label>
+            <label class="four__label">
+              <input type="radio" name="home" class="four__input">
+              <span class="four__span">I am homeless</span>
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="block-five">
+        <div class="block-five__container five">
+          <form action="#" class="five__form">
+            <label for="five-select">2+2=</label>
+            <select id="five-select" name="form[select]" class="five__select">
+              <option class="five__option" disabled selected value="?">?</option>
+              <option class="five__option" value="6">6</option>
+              <option class="five__option" value="4">4</option>
+              <option class="five__option" value="2">2</option>
+            </select>
+          </form>
+        </div>
+      </div>
+      <div class="block-six">
+        <div class="block-six__container six">
+          <form enctype="multipart/form-data" method="get" action="#">
+            <label class="six__label">
+              <input class="six__input" name="form[]" type="checkbox">
+            </label>
+            <label for="file_one" class="six__files">
+              <input accept=".jpg, .png" name="form[]" id="file_one" multiple  type="file">
+            </label>
+          </form>
+        </div>
+      </div>
+      <section class="registration">
+        <div class="registration__container">
+          <div class="registration__header">
+            <h2 class="registration__title">REGISTER To FURNITUR</h2>
+            <p class="registration__subtitle">GET MONTHLY VOUCHER WITH JUST ONE CLICK!</p>
+          </div>
+          <div class="registration__body">
+            <div class="registration__block block-registration">
+              <h2 class="block-registration__title">YOUR INFORMATION</h2>
+              <div class="block-registration__subtitle">
+                <p>You already have an account? <a href="#" class="block-registration__option">Sign in here</a></p>
+              </div>
+              <form class="block-registration__form" method="post" action="#">
+                <label class="block-registration__visuall-hidden" for="name">Your name</label>
+                <input id="name" maxlength="25" pattern="^[A-Za-z]+([ -][A-Za-z]+)*$" type="text" required placeholder="Your name" name="form[]" class="block-registration__input-short">
+                <label class="block-registration__visuall-hidden" for="e-mail">Your E-mail</label>
+                <input id="e-mail" type="email" required placeholder="E-mail" name="form[]" class="block-registration__input-short">
+                <label class="block-registration__visuall-hidden" for="number">Your phone-number</label>
+                <input id="number" type="number" required placeholder="Phone number" name="form[]" class="block-registration__input-long">
+                <label class="block-registration__visuall-hidden" for="password">Your Password</label>
+                <input id="password" minlength="5" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" type="password" required placeholder="Password" name="form[]" class="block-registration__input-short">
+                <label class="block-registration__visuall-hidden" for="password-reset">Reset Your Password</label>
+                <input id="password-reset" minlength="5" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" type="password" required placeholder="Reset Password" name="form[]" class="block-registration__input-short">
+                <button class="block-registration__button" type="submit">Create an account</button>
+              </form>
+            </div>
+            <div class="registration__discount discount">
+              <div class="discount__text-block">
+                <div class="discount__mark">HOT</div>
+                <div class="discount__title">
+                  <p>DISCOUNT 25% FOR NEW MEMBER</p>
+                </div>
+              </div>
+              <img srcset="./img/lamps.png 1x, ./img/lamps-2x.png 2x, ./img/lamps-3x.png 3x" src="./img/lamps.png" alt="lamps" class="discount__image">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </div> 
+</body>
+</html>
