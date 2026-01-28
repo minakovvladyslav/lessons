@@ -513,6 +513,10 @@ main {
     font-size: 15px;
   }
 
+   .header__search {
+    border-bottom: none;
+  }
+
   .header__body--second {
     column-gap: 10px;
   }
@@ -532,4 +536,5 @@ main {
 
 .header__extra-two--order {
   order: 4;
+
 }
