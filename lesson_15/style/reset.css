@@ -1,0 +1,52 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+*::after, *::before {
+  display: inline-block;
+}
+
+input {
+  border: none;
+  background: none;
+  font-family: inherit;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  /* прибірає відступи у зображень */
+}
+
+html, body {
+  line-height: 1;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
