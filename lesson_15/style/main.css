@@ -499,7 +499,7 @@ main {
     column-gap: 10px;
     width: 18px;
     aspect-ratio: 1;
-    background-size: cover;
+    background-size: contain;
   }
   .header__extra-two {
     column-gap: 10px;
@@ -537,4 +537,5 @@ main {
 
 .header__extra-two--order {
   order: 4;
+
 }
