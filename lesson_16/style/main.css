@@ -439,7 +439,6 @@ body {
 .advantages__body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 74px;
   row-gap: 59px;
   justify-content: center;
 }
@@ -516,4 +515,5 @@ body {
   .advantages__body {
     grid-template-columns: 1fr;
   }
+
 }
