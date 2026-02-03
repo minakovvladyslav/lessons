@@ -227,11 +227,13 @@ body {
   margin-bottom: 40px;
 }
 
-  .icons__item {
+ .icons__item {
+    width: 100%;
     animation-name: icons;
     animation-duration: 15s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    will-change: transform;
   }
   @keyframes icons{
     0%{
@@ -517,3 +519,4 @@ body {
   }
 
 }
+
