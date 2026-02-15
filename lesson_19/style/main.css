@@ -187,7 +187,7 @@ body {
   .header__list::before {
     position: fixed;
     content: '';
-    height: 7rem;
+    height: 5rem;
     width: 100vw;
     background-color: black;
     z-index: 2;
@@ -501,5 +501,6 @@ body {
 footer {
   height: 1.25rem;
 }
+
 
 
