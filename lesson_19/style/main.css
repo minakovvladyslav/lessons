@@ -158,11 +158,9 @@ body {
   }
 
   .header__container {
-    position: fixed;
-  }
-
-  .header__container {
     padding-inline: 5%;
+    position: fixed;
+    padding-top: 1rem;
   }
 
   .header__list {
@@ -501,6 +499,7 @@ body {
 footer {
   height: 1.25rem;
 }
+
 
 
 
