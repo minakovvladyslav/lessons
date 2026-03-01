@@ -59,7 +59,7 @@ body {
   width: 100vw;
   height: 100svh;
   object-fit: cover;
-  margin-bottom: 55px;
+  margin-bottom: 3.4375rem;
 }
 
 .header__list {
@@ -134,7 +134,7 @@ body {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   color: var(--textColor);
-  top: 225px;
+  top: 14.0625rem;
   z-index: 1;
   max-width: 63.5rem;
   width: 100%;
@@ -142,7 +142,7 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: end;
-  padding-inline: 15px;
+  padding-inline: 0.9375rem;
 }
 
 .hero__wrapper {
@@ -170,7 +170,7 @@ body {
     padding-right: 5%;
     align-items: end;
     position: fixed;
-    padding-top: 120px;
+    padding-top: 7.5rem;
     flex-wrap: nowrap;
     right: 5%;
     row-gap: 3em;
@@ -182,7 +182,7 @@ body {
     overflow: auto;
     z-index: 3;
     transition: all 0.4s;
-    padding-bottom:30px;
+    padding-bottom:1.875rem;
   }
 
   .header__list::before {
@@ -412,7 +412,7 @@ body {
 
 .info__list {
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 }
 
 .info__page {
@@ -498,7 +498,7 @@ body {
     padding-block: 1.25rem;
   }
   .info__list, .info__body {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
   }
   .info__item {
     object-fit: cover;
@@ -508,7 +508,7 @@ body {
     text-align: center; 
   }
   .info__description {
-    max-width: 200px;
+    max-width: 12.5rem;
     width: 100%;
   }
 }
@@ -546,4 +546,5 @@ body {
 footer {
   height: 1.25rem;
 }
+
 
